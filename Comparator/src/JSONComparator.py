@@ -75,9 +75,11 @@ class Compare(object):
 
                     #Get the response of the URL
                     file1_url = requests.get(url=url1, headers={'content-type':'application/json'})
+                    assert file1_url.status_code == 200, "Incorrect status code"
                     file1_url_resp = file1_url.json()
 
                     file2_url = requests.get(url=url2, headers={'content-type': 'application/json'})
+                    assert file2_url.status_code == 200, "Incorrect status code"
                     file2_url_resp = file2_url.json()
 
                     #call the comparator funtion which compares the responses
