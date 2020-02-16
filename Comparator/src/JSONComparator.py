@@ -54,7 +54,7 @@ def comparator(url1_data, url2_data):
                 (type(url1_resp_data) is type(url2_resp_data))
         )
 
-        # compare a to b, then b to a
+        # compare url1 to url2, then url2 to url1
 
     return (
             compare(url1_data, url2_data) and

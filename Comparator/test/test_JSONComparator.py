@@ -4,7 +4,7 @@ from pathlib import Path
 from Comparator.src.JSONComparator import Compare
 
 
-def test_small_req():
+def test_less_req():
     FILE1_PATH = "Comparator/RequestURLFiles/File1.txt"
     FILE2_PATH = "Comparator/RequestURLFiles/File2.txt"
 
@@ -15,7 +15,7 @@ def test_small_req():
     obj.json_comparator(File1, File2)
 
 
-def test_incorrect_files():
+def test_incorrect_urls():
     I_FILE1_PATH = "Comparator/RequestURLFiles/IFile1.txt"
     I_FILE2_PATH = "Comparator/RequestURLFiles/IFile2.txt"
 
@@ -25,7 +25,7 @@ def test_incorrect_files():
     obj.json_comparator(I_File1, I_File2)
 
 
-def test_large_req():
+def test_1000_req():
     L_FILE1_PATH = "Comparator/RequestURLFiles/largeFile1.txt"
     L_FILE2_PATH = "Comparator/RequestURLFiles/largeFile2.txt"
 
